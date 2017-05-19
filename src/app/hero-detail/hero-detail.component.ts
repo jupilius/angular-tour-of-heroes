@@ -18,10 +18,6 @@ export class HeroDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
-
-
-
     // this.route.params
     //   .switchMap((params: Params) => this.heroService.getHero(+params['id']))
     //   .subscribe(hero => this.hero = hero);
@@ -35,6 +31,7 @@ export class HeroDetailComponent implements OnInit {
     //  }
     //  );
     // 다시 살펴보자
+    // [routerLink]="['/detail', hero.id]" 로 넘겨줬음.
     this.route.params.subscribe(
       (p: Params) => this.hero = this.heroService.getHero(+p['id'])
     );

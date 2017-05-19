@@ -33,7 +33,7 @@ export class HeroService {
 
     // function 키워드를 없애고 파리미터와 본문 사이에 => 를 넣는다.
     // =>를 만나면 {}와 return를 생략할 수 있음.
-    // console.log('id : ', id);
+     console.log('id : ', id);
     return HEROES.find((hero) =>  hero.id === id);
   }
 }

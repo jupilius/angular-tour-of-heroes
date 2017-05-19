@@ -1,7 +1,11 @@
 <h1>{{title}}</h1>
 <nav>
-  <a routerLink="/dashboard">Dashbaord</a>
-  <a routerLink="/heroes">Heroes</a> <!--  app.module의 heroes의 내용인 HeroesComponent가 보인다.-->
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <!--  app.module의 heroes의 내용인 HeroesComponent가 보인다.-->
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
 </nav>
 <router-outlet></router-outlet>
 <!-- <app-heroes></app-heroes> -->
+
+
+
