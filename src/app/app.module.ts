@@ -25,7 +25,7 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule   // 외부에서 Router 모듈을 가져온다.
   ],
   providers: [HeroService],  // 서비스 설정
   bootstrap: [AppComponent]
